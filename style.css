@@ -464,17 +464,36 @@ h6 {
   }
 
   h1 {
-    font-size: 30px;
-    margin-top: 295px;
+    font-size: 35px;
+    margin-top: 275px;
+    color: beige;
+    font-weight: bold;
   }
 
   .title {
     margin-top: 20px;
+    color: rgb(52, 52, 107);
   }
 
   .image1,
   p {
     margin: 0 50px;
+  }
+
+  .website-links-light {
+    margin-left: -95px;
+  }
+
+  .website-links-joke {
+    margin-left: -135px;
+  }
+
+  .website-links-clock {
+    margin-left: -120px;
+  }
+
+  .website-links-dictionary {
+    margin-left: -120px;
   }
 }
 
