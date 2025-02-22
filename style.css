@@ -90,7 +90,7 @@ h1 {
   color: rgb(52, 52, 107);
   text-align: left;
   margin-top: 410px;
-  margin-left: -650px;
+  margin-left: -550px;
   color: beige;
 }
 
@@ -102,6 +102,11 @@ h2 {
   margin-bottom: 20px;
   color: rgb(52, 52, 107);
 }
+
+.title {
+  margin-left: 20px;
+}
+
 .projects-title {
   padding-top: 65px;
 }
@@ -272,4 +277,128 @@ h6 {
   display: block;
   justify-content: center;
   margin-left: 190px;
+}
+
+@media (max-width: 1030px) {
+  body {
+    height: 600px;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    max-height: 400px;
+  }
+
+  h1 {
+    margin-left: -410px;
+    font-size: 60px;
+    margin-top: 300px;
+  }
+
+  h2 {
+    margin-left: -660px;
+    margin-top: -70px;
+  }
+  p {
+    width: 600px;
+  }
+  .image1 {
+    width: 550px;
+    height: 300px;
+  }
+
+  .image2 {
+    display: none;
+  }
+
+  .about .row {
+    grid-template-columns: 1fr;
+    grid-gap: 8px;
+    margin: 20px;
+  }
+
+  .website,
+  .apps,
+  .ai,
+  .react {
+    display: none;
+  }
+
+  .website-links-travel,
+  .website-links-weather,
+  .website-links-quote,
+  .website-links-ai {
+    margin-left: -200px;
+  }
+
+  .website-links-light {
+    margin-left: -105px;
+  }
+
+  .website-links-joke {
+    margin-left: -155px;
+  }
+
+  .website-links-clock {
+    margin-left: -140px;
+  }
+
+  .website-links-dictionary {
+    margin-left: -140px;
+  }
+}
+
+@media (max-width: 430px) {
+  h1 {
+    margin-left: -100px;
+  }
+
+  .title {
+    margin-left: 190px;
+  }
+
+  .projects-title {
+    margin-left: -70px;
+  }
+  p {
+    width: 390px;
+    margin-left: 170px;
+  }
+
+  .image1 {
+    width: 650px;
+    height: 300px;
+  }
+  .website-links-light {
+    margin-left: -95px;
+  }
+
+  .website-links-joke {
+    margin-left: -135px;
+  }
+
+  .website-links-clock {
+    margin-left: -120px;
+  }
+
+  .website-links-dictionary {
+    margin-left: -120px;
+  }
+
+  .contact-title {
+    margin-left: -10px;
+  }
+  .name,
+  .email,
+  .phone,
+  .message {
+    font-size: 14px;
+    padding: 8px 20px;
+    width: 270px;
+  }
+
+  .btn {
+    margin-left: 110px;
+  }
 }
