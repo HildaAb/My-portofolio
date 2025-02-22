@@ -87,12 +87,18 @@ h1 {
   font-size: 60px;
   color: rgb(52, 52, 107);
   text-align: left;
-  margin-bottom: 200px;
+  margin-bottom: 360px;
+  color: beige;
 }
 
 .title {
-  margin-top: 210px;
+  padding-top: 50px;
   margin-bottom: 40px;
+  color: rgb(52, 52, 107);
+}
+
+.contact-title {
+  padding-top: 90px;
 }
 
 .about .row {
@@ -212,6 +218,7 @@ i {
   font-size: 40px;
   padding: 20px;
   color: rgb(52, 52, 107);
+  margin-bottom: -200px;
 }
 
 h6 {
@@ -313,6 +320,12 @@ h6 {
   h1 {
     margin-top: 480px;
     margin-bottom: -150px;
+    color: beige;
+    font-weight: bold;
+  }
+
+  .title {
+    color: rgb(52, 52, 107);
   }
 }
 
@@ -336,15 +349,17 @@ h6 {
 
   h1 {
     font-size: 40px;
-    margin-top: 425px;
+    margin-top: 380px;
     margin-left: 10px;
     text-align: center;
     margin-bottom: 40px;
+    color: beige;
   }
 
   .title {
     text-align: center;
     margin-top: -20px;
+    color: rgb(52, 52, 107);
   }
 
   .image2 {
@@ -405,28 +420,7 @@ h6 {
   }
 }
 
-@media (max-width: 350px) {
-  nav {
-    font-size: 6px;
-    letter-spacing: 1px;
-  }
-
-  nav a {
-    padding: 10px;
-  }
-
-  h1 {
-    font-size: 30px;
-    margin-top: 405px;
-  }
-
-  .image1,
-  p {
-    margin: 0 50px;
-  }
-}
-
-@media (max-width: 370px) {
+@media (max-width: 420px) {
   body {
     max-height: 400px;
   }
@@ -436,25 +430,6 @@ h6 {
     flex-direction: row;
     justify-content: space-evenly;
     height: 10vh;
-    font-size: 6px;
-    letter-spacing: 1px;
-  }
-
-  nav a {
-    padding: 10px;
-  }
-
-  h1 {
-    font-size: 30px;
-    margin-top: 300px;
-    margin-left: 10px;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-}
-
-@media (max-width: 361px) {
-  nav {
     font-size: 6px;
     letter-spacing: 1px;
   }
