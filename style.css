@@ -57,7 +57,7 @@ nav {
 
 .menu li {
   list-style: none;
-  margin-right: 20px;
+  margin-right: -2px;
   padding: 1rem 0;
 }
 
@@ -115,11 +115,13 @@ h2 {
 }
 
 .projects-title {
-  padding-top: 65px;
+  padding-top: 10px;
+  margin-left: -220px;
+  margin-bottom: 50px;
 }
 
 .contact-title {
-  padding-top: 80px;
+  margin-left: -15px;
 }
 
 .about .row {
@@ -138,8 +140,8 @@ h2 {
 
 .image1,
 .image2 {
-  width: 300px;
-  height: 150px;
+  width: 350px;
+  height: 200px;
   margin-bottom: 20px;
   margin-right: 40px;
   padding: 7px;
@@ -179,7 +181,7 @@ p {
 .website-links-light,
 .website-links-weather,
 .website-links-clock,
-.website-links-joke,
+.website-links-count,
 .website-links-anime,
 .website-links-quote,
 .website-links-ai,
@@ -209,7 +211,7 @@ p {
   margin-left: -125px;
 }
 
-.website-links-joke {
+.website-links-count {
   margin-left: -175px;
 }
 
@@ -226,7 +228,7 @@ p {
 .website-links-weather:hover,
 .website-links-clock:hover,
 .website-links-quote:hover,
-.website-links-joke:hover,
+.website-links-count:hover,
 .website-links-ai:hover,
 .website-links-dictionary:hover {
   color: whitesmoke;
@@ -286,13 +288,29 @@ h6 {
   margin-left: 190px;
 }
 
-@media (max-width: 1030px) {
+@media (min-width: 1280px) {
   body {
     height: 600px;
   }
+
+  h1 {
+    font-size: 90px;
+  }
+
+  .title {
+    margin-top: -50px;
+  }
+
+  .projects-title {
+    margin-top: 50px;
+  }
+
+  .contact-title {
+    margin-top: 10px;
+  }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 1030px) {
   body {
     max-height: 400px;
   }
@@ -307,9 +325,15 @@ h6 {
     margin-left: -660px;
     margin-top: -70px;
   }
+
   p {
     width: 600px;
   }
+
+  .projects-title {
+    margin-top: 20px;
+  }
+
   .image1 {
     width: 550px;
     height: 300px;
@@ -336,81 +360,100 @@ h6 {
   .website-links-weather,
   .website-links-quote,
   .website-links-ai {
-    margin-left: -200px;
+    margin-left: -270px;
   }
 
   .website-links-light {
-    margin-left: -105px;
+    margin-left: -135px;
   }
 
-  .website-links-joke {
-    margin-left: -155px;
+  .website-links-count {
+    margin-left: -185px;
   }
 
   .website-links-clock {
-    margin-left: -140px;
+    margin-left: -170px;
   }
 
   .website-links-dictionary {
-    margin-left: -140px;
+    margin-left: -170px;
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 650px) {
   body {
     width: 100%;
+    max-height: 60vh;
   }
+
   h1 {
-    margin-left: -100px;
+    margin-top: 400px;
+    margin-left: -30px;
   }
 
   .title {
-    margin-left: 200px;
+    margin-left: 170px;
   }
 
   .projects-title {
-    margin-left: -70px;
+    margin-left: -40px;
   }
 
-  p {
-    width: 390px;
-    margin-left: 180px;
+  .contact-title {
+    margin-left: 80px;
+    margin-top: 20px;
   }
 
   .image1 {
-    width: 650px;
-    height: 300px;
-    margin: 10px;
+    margin: 5px;
+  }
+  p {
+    width: 360px;
+    margin-left: 150px;
+  }
+
+  .image1 {
+    margin-bottom: -10px;
+  }
+
+  .website-links-travel,
+  .website-links-weather,
+  .website-links-quote,
+  .website-links-ai {
+    margin-left: -180px;
   }
   .website-links-light {
     margin-left: -95px;
   }
 
-  .website-links-joke {
-    margin-left: -135px;
+  .website-links-count {
+    margin-left: -145px;
   }
 
   .website-links-clock {
-    margin-left: -120px;
+    margin-left: -130px;
   }
 
   .website-links-dictionary {
-    margin-left: -120px;
+    margin-left: -130px;
   }
 
-  .contact-title {
-    margin-left: -10px;
+  h6 {
+    margin-left: 80px;
   }
+  .contact-me {
+    margin-left: 80px;
+  }
+
   .name,
   .email,
   .phone,
   .message {
-    font-size: 14px;
-    padding: 8px 20px;
-    width: 270px;
+    width: 100px;
+    margin-left: 80px;
   }
 
   .btn {
-    margin-left: 110px;
+    margin-left: 210px;
   }
 }
