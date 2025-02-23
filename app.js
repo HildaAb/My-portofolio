@@ -1,8 +1,7 @@
-document.getElementById("menu-toggle").addEventListener("click", function () {
-  const menu = document.getElementById("menu");
-  if (menu.style.display === "block") {
-    menu.style.display = "none";
-  } else {
-    menu.style.display = "block";
-  }
+const btn = document.getElementById("menu-btn");
+const nav = document.getElementById("nav");
+
+btn.addEventListener("click", () => {
+  nav.classList.toggle("active");
+  btn.classList.toggle("active");
 });

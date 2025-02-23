@@ -5,43 +5,60 @@ html {
   padding: 0;
 }
 
-.hamburgarmenu {
+body {
+  margin: 0;
+  background-image: url("firstPage.jpg");
+  background-size: cover;
+  background-position: center;
+  background-position-y: bottom;
+  max-height: 100vh;
+  background-repeat: no-repeat;
+  font-optical-sizing: auto;
+  font-family: "Comfortaa", serif;
+  padding: 0;
+}
+
+.menu-btn {
   position: fixed;
+  right: 20px;
+  top: 20px;
+  padding: 0;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-btn.active {
+  transform: translateX(-200px);
+}
+
+.hamburgarmenu {
   width: 50px;
   height: 50px;
-  display: block;
-  justify-content: start;
-  margin-left: -10px;
-  margin-top: 10px;
-  visibility: hidden;
+  background-color: rgb(247, 211, 102);
 }
 
 nav {
   position: fixed;
   top: 0;
-  left: 0;
-  padding: 0;
-  margin: 0;
+  right: 0;
   font-family: oswald, sans-serif;
   font-size: 18px;
   font-weight: bolder;
   background-color: rgb(247, 211, 102);
-  display: flex;
-  justify-content: space-between;
   max-height: 100vh;
-  width: 100%;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
 }
 
 .menu {
-  display: flex;
-  justify-content: start;
-  max-height: 100vh;
-  max-width: 100%;
+  padding: 0;
+  list-style: none;
 }
 
 .menu li {
   list-style: none;
   margin-right: 20px;
+  padding: 1rem 0;
 }
 
 nav a {
@@ -61,26 +78,16 @@ nav a:focus {
   border-bottom: 3px solid rgb(36, 60, 48);
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background-image: url("firstPage.jpg");
-  background-size: cover;
-  background-position: center;
-  background-position-y: bottom;
-  max-height: 100vh;
-  width: 100%;
-  background-repeat: no-repeat;
-  font-optical-sizing: auto;
-  font-family: "Comfortaa", serif;
+nav.active {
+  transform: translateX(0);
 }
 
 section {
+  max-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-height: 100vh;
 }
 
 h1 {
@@ -285,7 +292,7 @@ h6 {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 860px) {
   body {
     max-height: 400px;
   }
@@ -350,25 +357,30 @@ h6 {
 }
 
 @media (max-width: 430px) {
+  body {
+    width: 100%;
+  }
   h1 {
     margin-left: -100px;
   }
 
   .title {
-    margin-left: 190px;
+    margin-left: 200px;
   }
 
   .projects-title {
     margin-left: -70px;
   }
+
   p {
     width: 390px;
-    margin-left: 170px;
+    margin-left: 180px;
   }
 
   .image1 {
     width: 650px;
     height: 300px;
+    margin: 10px;
   }
   .website-links-light {
     margin-left: -95px;
