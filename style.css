@@ -199,28 +199,27 @@ p {
     0px 3px 4px 3px rgba(172, 231, 241, 0.15);
   transition: all 2s ease-in-out;
 }
-
-.website-links-travel,
+.website-links-light,
 .website-links-weather,
 .website-links-quote,
 .website-links-ai {
-  margin-left: -150px;
+  margin-left: -145px;
 }
 
-.website-links-light {
-  margin-left: -125px;
+.website-links-travel {
+  margin-left: -167px;
 }
 
 .website-links-count {
-  margin-left: -175px;
+  margin-left: -165px;
 }
 
 .website-links-clock {
-  margin-left: -160px;
+  margin-left: -150px;
 }
 
 .website-links-dictionary {
-  margin-left: -160px;
+  margin-left: -150px;
 }
 
 .website-links-travel:hover,
